@@ -10,18 +10,16 @@ import UIKit
 
 class DatePopupViewController: UIViewController {
     
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var saveDateButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
-    
-    @IBAction func saveButton(_ sender: UIButton) {
-        
+    @IBAction func saveButtonAction(_ sender: UIButton) {
+        dismiss(animated: true)
     }
 }
