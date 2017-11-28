@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC464E7B1FCD3F66007CD3C4 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC464E7A1FCD3F66007CD3C4 /* DatePopupViewController.swift */; };
 		DC94B4751FCCF00F00DD3D45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC94B4741FCCF00F00DD3D45 /* AppDelegate.swift */; };
 		DC94B4771FCCF00F00DD3D45 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC94B4761FCCF00F00DD3D45 /* FirstViewController.swift */; };
 		DC94B4791FCCF00F00DD3D45 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC94B4781FCCF00F00DD3D45 /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC464E7A1FCD3F66007CD3C4 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
 		DC94B4711FCCF00F00DD3D45 /* ReuseablePopups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReuseablePopups.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC94B4741FCCF00F00DD3D45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC94B4761FCCF00F00DD3D45 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				DC94B4741FCCF00F00DD3D45 /* AppDelegate.swift */,
+				DC464E7A1FCD3F66007CD3C4 /* DatePopupViewController.swift */,
 				DC94B4761FCCF00F00DD3D45 /* FirstViewController.swift */,
 				DC94B4781FCCF00F00DD3D45 /* SecondViewController.swift */,
 				DC94B47A1FCCF00F00DD3D45 /* Main.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC94B4791FCCF00F00DD3D45 /* SecondViewController.swift in Sources */,
+				DC464E7B1FCD3F66007CD3C4 /* DatePopupViewController.swift in Sources */,
 				DC94B4751FCCF00F00DD3D45 /* AppDelegate.swift in Sources */,
 				DC94B4771FCCF00F00DD3D45 /* FirstViewController.swift in Sources */,
 			);

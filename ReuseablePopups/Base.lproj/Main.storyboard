@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--View Controller-->
+        <!--Date Popup View Controller-->
         <scene sceneID="Y6r-VQ-XZi">
             <objects>
-                <viewController id="XAa-1V-F5l" sceneMemberID="viewController">
+                <viewController id="XAa-1V-F5l" customClass="DatePopupViewController" customModule="ReuseablePopups" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uLP-N7-KiA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,6 +78,9 @@
                                         <rect key="frame" x="83" y="164" width="77" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <state key="normal" title="Save Date"/>
+                                        <connections>
+                                            <action selector="saveButton:" destination="XAa-1V-F5l" eventType="touchUpInside" id="h2m-6X-zvo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,6 +89,10 @@
                         <color key="backgroundColor" white="0.75009300595238093" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bw3-TO-aLJ"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="k2Q-ic-0mp" id="fCu-jM-Pcl"/>
+                        <outlet property="titleLabel" destination="rpq-W0-WE1" id="54q-FP-wgf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eZL-ov-3CB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
