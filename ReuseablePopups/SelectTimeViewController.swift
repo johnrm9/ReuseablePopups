@@ -10,10 +10,23 @@ import UIKit
 
 class SelectTimeViewController: UIViewController {
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    var observer: NSObjectProtocol?
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        observer =
+            NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: .main) { (notification) in
+                let dateViewController = notification.object as! DatePopupViewController
+                self.timeLabel.text = dateViewController.formattedTime
+        }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        guard let observer = observer else { return }
+        NotificationCenter.default.removeObserver(observer)
     }
 
     @IBAction func selectTimeAction(_ sender: UIButton) {

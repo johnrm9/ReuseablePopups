@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC23A8391FCEC56300A231C0 /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC23A8381FCEC56300A231C0 /* NotificationNameExtension.swift */; };
 		DC414AB71FCDE40A00348010 /* DatePopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC414AB51FCDE40A00348010 /* DatePopupViewController.storyboard */; };
 		DC464E7B1FCD3F66007CD3C4 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC464E7A1FCD3F66007CD3C4 /* DatePopupViewController.swift */; };
 		DC74824B1FCDE4CC00B188FE /* SelectTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7482491FCDE4CC00B188FE /* SelectTimeViewController.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC23A8381FCEC56300A231C0 /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 		DC414AB61FCDE40A00348010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DatePopupViewController.storyboard; sourceTree = "<group>"; };
 		DC464E7A1FCD3F66007CD3C4 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
 		DC74824A1FCDE4CC00B188FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelectTimeViewController.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				DC94B4761FCCF00F00DD3D45 /* FirstViewController.swift */,
 				DC94B4781FCCF00F00DD3D45 /* SecondViewController.swift */,
 				DCD826881FCDDC2A00E6B2E0 /* SelectTimeViewController.swift */,
+				DC23A8381FCEC56300A231C0 /* NotificationNameExtension.swift */,
 				DC94B47A1FCCF00F00DD3D45 /* Main.storyboard */,
 				DC7482491FCDE4CC00B188FE /* SelectTimeViewController.storyboard */,
 				DC94B47D1FCCF00F00DD3D45 /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 				DC94B4791FCCF00F00DD3D45 /* SecondViewController.swift in Sources */,
 				DCD826891FCDDC2A00E6B2E0 /* SelectTimeViewController.swift in Sources */,
 				DC464E7B1FCD3F66007CD3C4 /* DatePopupViewController.swift in Sources */,
+				DC23A8391FCEC56300A231C0 /* NotificationNameExtension.swift in Sources */,
 				DC94B4751FCCF00F00DD3D45 /* AppDelegate.swift in Sources */,
 				DC94B4771FCCF00F00DD3D45 /* FirstViewController.swift in Sources */,
 			);

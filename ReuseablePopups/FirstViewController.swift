@@ -10,9 +10,23 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    var observer: NSObjectProtocol?
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        observer =
+        NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: .main) { (notification) in
+            let dateViewController = notification.object as! DatePopupViewController
+            self.dateLabel.text = dateViewController.formattedDate
+        }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        guard let observer = observer else { return }
+        NotificationCenter.default.removeObserver(observer)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -21,10 +35,6 @@ class FirstViewController: UIViewController {
             let popupViewControler = segue.destination as! DatePopupViewController
             popupViewControler.showTimePicker = false
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 }
 
