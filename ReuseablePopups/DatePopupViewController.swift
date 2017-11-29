@@ -14,8 +14,20 @@ class DatePopupViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var saveDateButton: UIButton!
     
+    var showTimePicker: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if showTimePicker {
+            titleLabel.text = "Select Time"
+            datePicker.datePickerMode = .time
+            saveDateButton.setTitle("Save Time", for: .normal)
+        } else {
+            titleLabel.text = "Select Date"
+            datePicker.datePickerMode = .date
+            saveDateButton.setTitle("Save Date", for: .normal)
+        }
 
     }
 
